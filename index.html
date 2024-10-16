@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesotho Electricity Company (LEC)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+            color: white;
+        }
+
+        header {
+            background-color: red;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 3;
+            padding: 0;
+            width: 100%;
+            position: absolute;
+            top: 60px; /* Positioned below the header */
+            left: 0;
+        }
+
+        nav a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 15px; 
+            margin-top: 5;
+
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin-top: 120px; /* Ensure content is pushed below header and nav */
+        }
+
+        .section {
+            background-color:white;
+            color: black;
+            width: 45%;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            text-transform: capitalize;
+            font-size:medium;
+
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .home-page {
+            text-align: center;
+            background-image: url('Background.jpg'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .home-page h2 {
+            color: white;
+            font-size: 2em;
+            margin: 20px;
+        }
+
+        footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div class="home-page" id="home">
+    <header>
+        <h1>Welcome to Lesotho Electricity Company (LEC)</h1>
+    </header>
+
+    <nav>
+        <a href="#contact">Contact Us</a>
+        <a href="#notices">Notices</a>
+        <a href="#metering">Power Saving Tips</a>
+        <a href="#outages">Power Outages</a>
+    </nav>
+
+
+</div>
+
+<!-- Individual Sections -->
+<div class="content">
+
+    <!-- Contact Us Section -->
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>LEC Headquarters, 53 Moshoeshoe Road, Industrial Area, Maseru</p>
+        <p>Phone: +266 62274000 | +266 8002 2000</p>
+        <p>Email: <a href="mailto:pr@lec.co.ls">pr@lec.co.ls</a></p>
+        <p>Office Hours: Mon - Fri, 8:00 AM - 5:00 PM</p>
+        <img src="contact.jpg" alt="LEC Headquarters">
+    </div>
+
+    <!-- Notices Section -->
+    <div class="section" id="notices">
+        <h2>Notices</h2>
+        <p>Stay updated on electricity tariffs, service interruptions, and public notices.</p>
+        <p>Call: +266 62274000 | Toll-Free: +266 8002 2000</p>
+        <p>Email: <a href="mailto:pr@lec.co.ls">pr@lec.co.ls</a></p>
+        <img src="notices.jpg" alt="Public Notices">
+    </div>
+
+    <!-- Power Saving Tips -->
+    <div class="section" id="metering">
+        <h2>Power Saving Tips</h2>
+        <ul>
+             <li>Switch off high power consuming appliances such as geysers if not in use.</li>
+             <li>Set daily power usage limit low.</li>
+             <li>Use othe means for energy for simple daily tasks like cooking.</li>
+        </ul>    
+        
+        <img src="metering.jpg" alt="Prepayment Meters">
+    </div>
+
+    <!-- Power Outages Section -->
+    <div class="section" id="outages">
+        <h2>Power Outages</h2>
+        <p>To report a power outage, contact us immediately.</p>
+        <p>Call: +266 62274000 | Toll-Free: +266 8002 2000</p>
+        <img src="outage.jpg" alt="Power Outages">
+    </div>
+
+</div>
+<footer>
+    <p>&copy; 2024 Lesotho Electricity Company (LEC). All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
